@@ -16,15 +16,18 @@ export default function Home() {
                 <h1 className={styles.title}>Jules Andries</h1>
                 <p className={styles.tagline}>Développeur SAP en Alternance</p>
                 <p className={styles.location}>📍 Ruitz, France</p>
+                <a href={"https://www.canva.com/design/DAGUAgFvURo/J9L_rsbQgYLOuRxHGOUS9w/view?utm_content=DAGUAgFvURo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h162a2d4b96"}><button className={styles.CVBtn}>
+                    Voir mon CV
+                </button></a>
             </header>
 
             {/* --- À PROPOS --- */}
             <section className={styles.section}>
                 <h2>À propos</h2>
                 <p>
-                    Actuellement en alternance chez CGI en tant que développeur SAP, je poursuis mon B.U.T Informatique à l'IUT de Lens.
+                    Actuellement en alternance chez CGI en tant que développeur SAP, je poursuis mon BUT Informatique à l'IUT de Lens.
                     <br /><br />
-                    📞 <em>06 12 34 56 78</em> (Faux numéro)
+                    📞 <em>07 68 10 62 09</em>
                     <br />
                     ✉️ <em>jules.andries62@gmail.com</em>
                 </p>
@@ -64,7 +67,7 @@ export default function Home() {
                         <p className={styles.company}>EASYS - Déplacements nationaux</p>
                         <p>
                             Travaux d'étanchéité et sécurisation de systèmes d'extinction à gaz.
-                            Mobilité nationale (Lyon, Reims, etc.) et travail en équipe.
+                            Mobilité nationale (Paris, Reims, etc.) et travail en équipe.
                         </p>
                     </div>
 
@@ -74,8 +77,7 @@ export default function Home() {
                         <h3>Écailler (Espace VIP)</h3>
                         <p className={styles.company}>Dupont Restauration (Stade Bollaert-Delelis)</p>
                         <p>
-                            Service client haut de gamme les jours de match du RC Lens.
-                            Respect strict des normes d'hygiène et préparation.
+                            Préparation et ouverture d'huitres pour les espaces VIP les jours de match. Mise en place du stand, respect des normes d’hygiène, service client haut de gamme.
                         </p>
                     </div>
 
@@ -122,7 +124,7 @@ export default function Home() {
                         </li>
                         <li>
                             <strong>Anglais</strong>
-                            <span>Technique & Professionnel</span>
+                            <span>Professionnel</span>
                         </li>
                     </ul>
                     <div style={{marginTop: '15px'}}>
@@ -138,19 +140,32 @@ export default function Home() {
 
             {/* --- PASSIONS --- */}
             <section className={styles.section}>
-                <h2>Centres d'intérêt</h2>
-                <p>
-                    🏃‍♂️ <strong>Sport :</strong> Course à pied.<br/>
-                    🎣 <strong>Nature :</strong> Pêche.<br/>
-                    🚀 <strong>Développement :</strong> Veille constante pour élargir mes compétences.
-                </p>
+                <h2>Passions</h2>
+                <div className={styles.interestsRow}>
+
+                    <div className={styles.interestItem}>
+                        <span className={styles.interestIcon}>🏃‍</span>
+                        <span>Course à pied</span>
+                    </div>
+
+                    <div className={styles.interestItem}>
+                        <span className={styles.interestIcon}>🎣</span>
+                        <span>Pêche & Nature</span>
+                    </div>
+
+                    <div className={styles.interestItem}>
+                        <span className={styles.interestIcon}>🏐</span>
+                        <span>Volley-ball</span>
+                    </div>
+
+                </div>
             </section>
 
             {/* --- FOOTER --- */}
             <footer className={styles.footer}>
                 <p>
-                    © 2026 - Portfolio Eco-responsable |
-                    <a href="mailto:jules.andries62@gmail.com"> Me contacter</a>
+                     2026 - Mon portfolio eco-responsable |
+                    <a href="mailto:jules.andries62@gmail.com"> Me contacter par mail</a>
                 </p>
             </footer>
         </main>
