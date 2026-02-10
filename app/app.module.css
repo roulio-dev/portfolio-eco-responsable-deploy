@@ -1,78 +1,140 @@
+/* --- LAYOUT GLOBAL --- */
 .main {
-    max-width: 680px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 40px 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color: #2c3e50;
+    /* Police système pour performance maximale */
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #333;
     line-height: 1.6;
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 40px;
-}
+/* --- HEADER --- */
+.header { text-align: center; margin-bottom: 50px; }
 
 .profileImg {
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #27ae60;
-    background-color: #eee;
+    margin-bottom: 20px;
+    border: 4px solid #27ae60; /* Vert Green IT */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.title {
-    margin: 0;
-    font-size: 2.5rem;
-    color: #1a252f;
-}
+.title { margin: 0; font-size: 2.2rem; color: #1e272e; }
+.tagline { color: #27ae60; font-size: 1.1rem; font-weight: 500; margin-top: 5px; }
 
-.tagline {
-    color: #7f8c8d;
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
+/* --- SECTIONS --- */
 .section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    margin-bottom: 35px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    /* Petite ombre légère pour le relief */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 
 .section h2 {
     margin-top: 0;
-    color: #27ae60;
-    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1e272e;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #27ae60;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.skillsList {
+/* --- TIMELINE (Expériences & Formations) --- */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.timelineItem {
+    position: relative;
+    padding-left: 15px;
+    border-left: 3px solid #e1e1e1; /* Ligne verticale grise */
+}
+
+.timelineItem:hover {
+    border-left-color: #27ae60; /* Devient vert au survol */
+    transition: 0.3s ease;
+}
+
+.timelineItem h3 {
+    margin: 5px 0 2px 0;
+    font-size: 1.1rem;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    font-weight: bold;
+    background: #f4f4f4;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.company {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* --- GRID (Compétences & Langues côte à côte) --- */
+.gridTwoColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+/* Sur mobile, on repasse en une seule colonne */
+@media (max-width: 600px) {
+    .gridTwoColumns { grid-template-columns: 1fr; }
+}
+
+/* --- LISTES (Pills & Langues) --- */
+.pillList {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
 }
 
-.skillsList li {
+.pillList li {
     background-color: #e8f5e9;
     color: #1e8449;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 0.95rem;
-    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
+.languageList {
+    list-style: none;
+    padding: 0;
+}
+
+.languageList li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.languageList li:last-child { border-bottom: none; }
+.languageList span { color: #7f8c8d; font-size: 0.9rem; }
+
+/* --- FOOTER --- */
 .footer {
     text-align: center;
-    font-size: 0.85rem;
-    color: #95a5a6;
-    margin-top: 50px;
-    border-top: 1px solid #eee;
-    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 60px;
+    padding-bottom: 20px;
 }
 
-.footer a {
-    color: #27ae60;
-    text-decoration: none;
-}
+.footer a { color: #27ae60; text-decoration: none; }
