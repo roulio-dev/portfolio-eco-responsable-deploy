@@ -1,4 +1,4 @@
-/* --- LAYOUT GLOBAL --- */
+/* --- CSS GLOBAL --- */
 .main {
     max-width: 700px;
     margin: 0 auto;
@@ -15,7 +15,7 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    border: 4px solid #27ae60; /* Vert Green IT */
+    border: 4px solid #27ae60; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
@@ -43,7 +43,6 @@
     background-color: #fff;
     border: 1px solid #e1e1e1;
     border-radius: 12px;
-    /* Petite ombre légère pour le relief */
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
 }
 
